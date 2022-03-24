@@ -1,0 +1,19 @@
+.Checkpoint{
+    height: 250px;
+    width: 250px;
+    background-color:khaki;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    &:hover {
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+}

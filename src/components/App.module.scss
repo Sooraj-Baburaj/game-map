@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  width: 100%;
+  min-height: calc(100vh-100px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  h1 {
+    width: 100%;
+    height: 70px;
+    padding: 15px 0;
+    font-size: 20px;
+    color: burlywood;
+    text-align: center;
+  }
+}
