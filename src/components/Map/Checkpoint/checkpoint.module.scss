@@ -12,8 +12,29 @@
     align-items: center;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
-    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     &:hover {
-        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    h1, h3 {
+        cursor: pointer;
     }
 }
+.completeStage {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    button {
+        width: 160px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255,0,0,0.8);
+        color: white;
+        margin: 50px;
+        cursor: pointer;
+    }
+ }

@@ -3,13 +3,13 @@
     height: 250px;
     border-radius: 50%;
     border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     transition: 0.3s;
     margin-right: 20px;
     display: flex;
     align-items: center;
     &:hover {
-        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
     h1 {
         cursor: pointer;

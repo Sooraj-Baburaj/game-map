@@ -1,5 +1,6 @@
 import Style from './map.module.scss';
 import MapStages from './MapStages';
+import NewMapStages from './NewMapStages';
 
 const Map = () => {
   return (
