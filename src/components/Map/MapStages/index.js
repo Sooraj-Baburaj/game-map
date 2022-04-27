@@ -96,7 +96,7 @@ const MapStages = () => {
                       } else if (i === middle[0] || i === middle[1]) {
                         translateValue = middle[1] * 80
                       } else if (i > middle[1]) {
-                        translateValue = (middle[1] * 80) - ((i - middle[1]) * 80)
+                        translateValue = ((middle[1] * 80) - ((i - middle[1]) * 80))
                       }
                     } else {
                       middle = Math.ceil(cueLength/2)
@@ -129,19 +129,19 @@ const MapStages = () => {
                   }
 
                   console.log(secretKeyIndex, moduleLength, cueLength, translateValue, middle)
-                 return ( <>
+                 return ( <div key={i}>
                   {cue.Secret_Key && (
                     <div className={Style.Key}>
                       <h1>Key</h1>
                     </div>
                   )}
-                  <div style={{display: 'flex'}} key={i}>
+                  <div style={{display: 'flex'}} >
                     <Stage index={i} moduleIndex={moduleIndex} title={cue.cue_name} translateValue={translateValue} level={cue?.level} isCheckpoint={cue.is_Checkpoint} />
                     {cue.is_Checkpoint && (
                       <Checkpoint moduleIndex={moduleIndex} index={i} level={cue?.level} />
                     )}
                   </div>
-                  </>)
+                  </div>)
                 })}
               </>
             )}
